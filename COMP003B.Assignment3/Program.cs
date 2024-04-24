@@ -26,10 +26,10 @@ namespace COMP003B.Assignment3
 
             app.UseAuthorization();
 
-            // TODO: modify controller route to default to StudentsController
+            // TODO: modify controller route to default to EventsController
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Students}/{action=Index}/{id?}");
+                pattern: "{controller=Events}/{action=Index}/{id?}");
 
             app.Run();
         }
